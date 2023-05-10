@@ -33,7 +33,7 @@ h6 {
     margin-left: 30px;
     margin-right: 10px;
     padding: 45px;
-    background-color: rgb(243, 237, 229);
+    background-color: #e2d2b445;
     float: left;
     font-size: 15px;
     width: 35%;
@@ -46,7 +46,7 @@ h6 {
 
 .resume .right-column {
     margin: 10px;
-    padding: 10px;
+    padding: 13px;
     float: right;
     width: 50%;
     font-size: 16.5px;
