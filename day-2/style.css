@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+.resume {
+    border: 1px solid #ccc;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.resume .left-column {
+    margin-left: 30px;
+    margin-right: 10px;
+    padding: 45px;
+    background-color: rgb(243, 237, 229);
+    float: left;
+    width: 35%;
+}
+
+.resume .right-column {
+    margin: 10px;
+    padding: 10px;
+    float: right;
+    width: 50%;
+}
+
+.img-center{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
