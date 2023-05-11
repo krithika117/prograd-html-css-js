@@ -89,13 +89,13 @@ body {
   }
 
   to {
-    background-position: -10000px 5000px;
+    background-position: -1000px 5000px;
   }
 }
 
 .stars,
 .twinkling {
-  position: absolute;
+position:fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -107,7 +107,7 @@ body {
 
 .twinkling {
   background: transparent url(../assets/twinkling.png) repeat top center;
-  animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 100s linear infinite;
   height: 100%;
   z-index: -1;
 }
@@ -205,8 +205,6 @@ h6 {
 .neon {
   box-shadow: 0 0 10px #c4a8ff, 0 0 20px #c4a8ff, 0 0 30px #512DA8;
 }
-
-
 
 .timeline {
   position: relative;
