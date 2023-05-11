@@ -36,9 +36,10 @@ nav {
   background-color: #000;
   opacity: 0.8;
   padding: 10px;
-  color: #fff;
+  color: #c4a8ff;
   z-index: 9999;
   transition: top 0.3s ease-in-out;
+
 }
 
 .menu-icon {
@@ -78,14 +79,17 @@ nav {
 }
 
 .menu li {
-  color: #fff;
+  font-weight: bold;
+  color: #ffffff;
   margin-bottom: 10px;
   text-align: center;
   flex-grow: 1;
+  text-shadow: 0 0 10px #512DA8, 0 0 20px #512DA8, 0 0 30px #512DA8;
 }
 
 .menu a {
-  color: #fff;
+  font-weight: bold;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -98,7 +102,7 @@ body {
 }
 
 /* Star Styles */
-@keyframes move-twink-back {
+@keyframes move-twinkle-back {
   from {
     background-position: 0 0;
   }
@@ -122,7 +126,7 @@ body {
 
 .twinkling {
   background: transparent url(../assets/twinkling.png) repeat top center;
-  animation: move-twink-back 100s linear infinite;
+  animation: move-twinkle-back 100s linear infinite;
   height: 100%;
   z-index: -1;
 }
@@ -220,7 +224,6 @@ h6 {
   width: 50%;
 }
 
-
 .container::after {
   content: '';
   position: absolute;
@@ -291,7 +294,7 @@ blockquote {
   font-size: 1.4em;
   width: 60%;
   margin: 50px auto;
-  padding: 1.2em 30px 1.2em 30px;
+  padding: 1em 30px;
   border-left: 8px solid #512DA8;
   line-height: 1.6;
   position: relative;
