@@ -10,7 +10,6 @@
   box-sizing: border-box;
 }
 
-
 nav {
   position: fixed;
   top: 0;
@@ -28,7 +27,6 @@ nav {
 }
 
 .menu {
-
   display: none;
   position: absolute;
   top: 100%;
@@ -50,7 +48,6 @@ nav {
 }
 
 #menu-toggle:checked~.menu {
-
   margin-left: -15px;
   display: block;
   opacity: 0.8;
@@ -95,7 +92,7 @@ body {
 
 .stars,
 .twinkling {
-position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -212,19 +209,16 @@ h6 {
   margin: 0 auto;
 }
 
-
 .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #512DA8;
-
+  background-color: #251a40;
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
 }
-
 
 .container {
   padding: 10px 40px;
@@ -266,11 +260,10 @@ h6 {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #967ec94a;
+  border: medium solid #251a40;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #967ec94a;
+  border-color: transparent transparent transparent #251a40;
 }
-
 
 .right::before {
   content: " ";
@@ -280,9 +273,9 @@ h6 {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #967ec94a;
+  border: medium solid #251a40;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #967ec94a transparent transparent;
+  border-color: transparent #251a40 transparent transparent;
 }
 
 
@@ -293,7 +286,7 @@ h6 {
 
 .timeline .content {
   padding: 20px 30px;
-  background-color: #967ec94a;
+  background-color: #251a40;
   position: relative;
   border-radius: 6px;
 }
@@ -328,4 +321,22 @@ h6 {
   .right {
     left: 0%;
   }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222323;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c126bb5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2c126bb5;
 }

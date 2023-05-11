@@ -38,33 +38,47 @@ h1 {
     font-size: 14px;
 }
 
-.shape:nth-child(2) {
+.shape:hover:nth-child(2) {
+    transition: opacity 0.3s ease;
     background-color: #e5c5f7;
     transform: rotate(45deg);
 }
 
-.shape:nth-child(2) {
+.shape:hover:nth-child(2) {
+    transition: opacity 0.3s ease;
     background-color: #e5c5f7;
     transform: rotate(45deg);
 }
 
 
-.shape:nth-child(3) {
+.shape:hover:nth-child(3) {
+    transition: opacity 0.3s ease;
     background-color: #a5d4f1;
     transform: scale(1.4);
 }
 
-.shape:nth-child(4) {
+.shape:hover:nth-child(4) {
+    transition: opacity 0.3s ease;
     background-color: #f6b6cc;
     transform: skewX(30deg);
 }
 
-.shape:nth-child(5) {
+.shape:hover:nth-child(5) {
+    transition: opacity 0.3s ease;
     background-color: #fae6c1;
     transform: skewY(30deg);
 }
 
-.shape:nth-child(6) {
+.shape:hover:nth-child(6) {
+    transition: opacity 0.3s ease;
     background-color: #a5f1df;
     transform: translate(0, 50px);
+}
+
+.caption {
+    transition: opacity 0.3s ease;
+}
+
+.shape:hover .caption {
+    opacity: 1;
 }
