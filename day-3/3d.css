@@ -2,29 +2,30 @@
 
 body {
     font-family: 'Wix Madefor Display', sans-serif;
-    color: rgb(75, 84, 117);
+    background-color: rgb(75, 84, 117);
+    color:#fff;
     margin: 5vh;
     padding: 5vh;
 }
 
 h1 {
     text-align: center;
-    text-shadow: 0 0 10px #d5d7d5, 0 0 20px #d5d7d5;
+    text-shadow: 0 0 10px #d5d7d5;
 }
 .shape-container {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
-   
   }
   
   .shape {
+    color:#fff;
     width: 200px;
     height: 200px;
-    background-color: #f6dfeb;
-    color: #495057;
+    background-color: rgb(110, 123, 168);
     font-size: 24px;
     font-weight: bold;
     text-align: center;
