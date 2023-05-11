@@ -78,6 +78,38 @@ body {
   background-color: #000000;
   font-family: 'Quicksand';
   color: aliceblue;
+  background: #000 url(../assets/stars.png) repeat top center;
+
+}
+
+/* Star Styles */
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.twinkling {
+  background: transparent url(../assets/twinkling.png) repeat top center;
+  animation: move-twink-back 200s linear infinite;
+  height: 100%;
+  z-index: -1;
 }
 
 h1,
@@ -106,26 +138,31 @@ h6 {
   align-items: center;
   justify-content: center;
   height: 95vh;
+  z-index: 3;
 }
 
 .image {
   text-align: center;
+  z-index: 3;
 }
 
 .image img {
   max-width: 90%;
   height: auto;
+  z-index: 3;
 }
 
 .main .content {
   padding: 20px;
   text-align: center;
+  z-index: 3;
 }
 
 @media (min-width: 768px) {
   .main {
     flex-direction: row;
     justify-content: space-evenly;
+    z-index: 3;
 
   }
 
@@ -134,25 +171,29 @@ h6 {
     text-align: right;
     padding: 20px;
     order: 2;
+    z-index: 3;
   }
 
   .main .content {
     flex: 1;
     padding: 20px;
     order: 1;
+    z-index: 3;
   }
 }
 
 .acontainer {
   text-align: center;
+  z-index: 3;
 }
 
 .acontainer p {
   line-height: 1.6;
-
+  z-index: 3;
 }
 
 .acontainer img {
+  z-index: 3;
   max-width: 20%;
   height: auto;
   margin-bottom: 20px;
@@ -200,8 +241,8 @@ h6 {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: #512DA8;
-  border: 4px solid #512DA8;
+  background-color: #251a40;
+  border: 4px solid #251a40;
   box-shadow: 0 0 10px #c4a8ff, 0 0 20px #512DA8, 0 0 30px #512DA8;
   top: 15px;
   border-radius: 50%;
