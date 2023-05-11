@@ -266,13 +266,11 @@ h6 {
     left: 31px;
   }
 
-
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
-
 
   .container::before {
     left: 60px;

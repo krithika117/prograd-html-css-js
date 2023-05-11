@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+
+body {
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: rgb(75, 84, 117);
+}
+
+h1 {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 21vh auto;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    background-color: #a5f1b2;
+    margin: 40px;
+    position: relative;
+    box-shadow: 0 0 10px #c7c8c7, 0 0 20px #c7c8c7;
+}
+
+.caption {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.shape:nth-child(2) {
+    background-color: #e5c5f7;
+    transform: rotate(45deg);
+}
+
+.shape:nth-child(3) {
+    background-color: #a5d4f1;
+    transform: scale(1.4);
+}
+
+.shape:nth-child(4) {
+    background-color: #f6b6cc;
+    transform: skewX(30deg);
+}
+
+.shape:nth-child(5) {
+    background-color: #fae6c1;
+    transform: skewY(30deg);
+}
+
+.shape:nth-child(6) {
+    background-color: #a5f1df;
+    transform: translate(0, 50px);
+}
