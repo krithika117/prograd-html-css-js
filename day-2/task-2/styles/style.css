@@ -291,7 +291,7 @@ h6 {
 blockquote {
   border-radius: 20px;
   color: white;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
   width: 60%;
   margin: 50px auto;
   padding: 1em 30px;
@@ -305,7 +305,6 @@ blockquote span {
   display: block;
   color: #333333;
   margin-top: 1rem;
-  font-size: 12px;
   text-transform: uppercase;
   font-family: 'Raleway';
   font-weight: 400;
@@ -317,6 +316,8 @@ blockquote span {
 /* Responsive */
 
 @media (min-width: 768px) {
+
+
   .main {
     flex-direction: row;
     justify-content: space-evenly;
@@ -332,6 +333,7 @@ blockquote span {
     z-index: 3;
   }
 
+
   .main .content {
     flex: 1;
     padding: 20px;
@@ -341,6 +343,13 @@ blockquote span {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    margin-top: 5rem;
+  }
+
+  .acontainer img {
+    min-width: 60%;
+  }
 
   .timeline::after {
     left: 31px;
@@ -367,6 +376,7 @@ blockquote span {
   .right {
     left: 0%;
   }
+
 }
 
 .fade-in {
@@ -375,6 +385,21 @@ blockquote span {
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in2 {
+  opacity: 0;
+  animation: fadeIn 2.5s ease-in forwards;
+}
+
+@keyframes fadeIn2 {
   from {
     opacity: 0;
   }
