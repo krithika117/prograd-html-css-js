@@ -63,11 +63,11 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: -15px;
+  
 }
 
 #menu-toggle:checked~.menu {
-  margin-left: -15px;
+  
   display: block;
   opacity: 0.8;
   visibility: visible;
@@ -98,7 +98,6 @@ body {
   font-family: 'Quicksand';
   color: aliceblue;
   background: #000 url(../assets/stars.png) repeat top center;
-
 }
 
 /* Star Styles */
