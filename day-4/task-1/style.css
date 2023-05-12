@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&family=Zeyada&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
+/* Side menu */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #27221fbb;
-  opacity: 0.8;
+  background-color: #27221fe9;
   padding: 5px;
   color: #7a553d;
   z-index: 9999;
@@ -29,7 +30,7 @@ nav {
   left: 0;
   width: 100%;
   height: 0;
-  background-color: #27221f;
+  background-color: #27221fe9;
   padding: 10px;
   list-style: none;
   margin: 0;
@@ -44,7 +45,7 @@ nav {
 
 #menu-toggle:checked~.menu {
   display: block;
-  opacity: 0.8;
+  opacity: 1;
   visibility: visible;
   height: 95vh;
   display: flex;
@@ -84,7 +85,7 @@ nav {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2c126bb5;
+  background: #604330;
 }
 
 body {
@@ -98,39 +99,88 @@ body {
 
 }
 
-/* Stack difference */
-.polaroid-stack1 {
+.main{
+  /* margin-top:10rem; */
+  height:90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button{
+  background-color: #604330;
+  color: #ffffff;
+  padding: 1rem;
+  font-family: 'Amatic SC', cursive;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #332419;
+  transition: 0.3s ease-in-out;
+}
+/* Flex differences */
+
+.card-row1 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.polaroid-stack2 {
+.card-row2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
-.polaroid-stack3 {
+.card-row3 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
 }
 
-.polaroid-stack4 {
+.card-row4 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
 }
 
-.polaroid-stack1 .polaroid,
-.polaroid-stack2 .polaroid,
-.polaroid-stack3 .polaroid,
-.polaroid-stack4 .polaroid {
+.card-row6 {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+/* Order */
+
+.card-row6 .card:nth-child(1) {
+  order: 3;
+}
+
+.card-row6 .card:nth-child(2) {
+  order: 1;
+}
+
+.card-row6 .card:nth-child(2) {
+  order: 2;
+}
+
+.card-row1 .card,
+.card-row2 .card,
+.card-row3 .card,
+.card-row4 .card,
+.card-row6 .card {
   position: relative;
   width: 200px;
   height: 250px;
@@ -149,49 +199,52 @@ body {
   overflow: hidden;
 }
 
-.polaroid-stack5 {
+.card-row5 {
   display: flex;
   flex-direction: row-reverse;
   width: calc(250px * 18);
   animation: scroll1 20s linear infinite;
 }
 
-.polaroid-stack5 .polaroid {
+.card-row5 .card {
   position: relative;
   width: auto;
   height: 300px;
   margin: 10px;
   transform: rotate(-3deg);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  animation: carousel-animation 20s infinite linear;
+  animation: carousel-animation 30s infinite linear;
 }
 
-.polaroid-stack5 .polaroid img {
+.card-row5 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0.4rem;
 }
 
-.polaroid-stack5 .caption {
+.card-row5 .caption {
+  text-transform: capitalize;
   position: absolute;
+  font-family: 'Zeyada', cursive;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 0.4rem;
   color: #27221f;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   text-align: center;
 }
 
-.polaroid:hover {
+.card:hover {
   transform: scale(1.1);
   transition: 0.7s ease-in-out;
   z-index: 1;
+  cursor: pointer;
 }
 
-.polaroid img {
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -199,13 +252,15 @@ body {
 }
 
 .caption {
+  text-transform: capitalize;
+  font-family: 'Zeyada', cursive;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 0.4rem;
   color: #27221f;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bolder;
   text-align: center;
 }
@@ -218,11 +273,12 @@ h5,
 h6 {
   font-weight: bolder;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000;
 }
 
 @media screen and (max-width:768px) {
-  .polaroid {
+  .card {
     position: relative;
     width: 50%;
     height: auto;
@@ -235,6 +291,13 @@ h6 {
   .caption {
     padding: 0.6rem;
     font-size: 1.5rem;
+  }
+
+  .card-row6 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
