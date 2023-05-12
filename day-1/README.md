@@ -1,4 +1,4 @@
 # Day - 1 Task - 1 Work Illustration
 
 ## Portfolio with no CSS
-![d1t1](https://github.com/krithika117/prograd-html-css-js/assets/76687631/54d868bf-37dc-4f3e-86ab-5abe01d5efdf)
+[chrome-capture-2023-4-12 (5).webm](https://github.com/krithika117/prograd-html-css-js/assets/76687631/410c8a19-50b4-4765-a10e-369dc80e3744)
