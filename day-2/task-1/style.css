@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.resume .left-column {
+    margin-left: 30px;
+    margin-right: 10px;
+    padding: 45px;
+    background-color: #e2d2b445;
+    float: left;
+    font-size: 15px;
+    width: 35%;
+}
+
+
+.resume .left-column .responsibilities table td {
+    padding: 6px;
+}
+
+.resume .right-column {
+    margin: 10px;
+    padding: 13px;
+    float: right;
+    width: 50%;
+    font-size: 16.5px;
+}
+
+.resume .right-column .education p {
+    line-height: 1.5rem;
+}
+
+.resume .right-column .projects p {
+    margin: 5px 0;
+}
+
+.resume .right-column .projects a {
+    text-decoration: none;
+    color: black;
+}
+
+.projects div {
+    margin-bottom: 20px;
+}
+
+.img-center {
+    text-align: center;
+}
+
+.resume table {
+    width: 100%;
+}
+
+.resume table td {
+    height: 30px;
+}
+
+.contact-icons {
+    display: flex;
+
+}
+
+.contact-icons a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+.contact-icons i {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+hr {
+    margin: 30px 0;
+    height: 3px;
+    border: none;
+    background-color: black;
+}
+
