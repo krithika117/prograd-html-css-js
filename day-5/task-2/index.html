@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Platina Bakery Discount Calculator</h1>
+        <label for="billAmount">Bill Amount:</label>
+        <input type="number" id="billAmount" name="billAmount" required><br>
+
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required><br>
+
+        <label for="dayOfWeek">Day of the Week:</label>
+        <select id="dayOfWeek" name="dayOfWeek" required>
+            <option value="">Select a day</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+        </select><br>
+        <div class="buttons">
+            <button type="submit" value="Calculate Discount" onclick="calculateDiscount()">Calculate Discount</button>
+            <button type="button" value="Clear" onclick="inputClear()">Clear</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

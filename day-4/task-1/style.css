@@ -99,16 +99,16 @@ body {
 
 }
 
-.main{
+.main {
   /* margin-top:10rem; */
-  height:90vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-button{
+button {
   background-color: #604330;
   color: #ffffff;
   padding: 1rem;
@@ -119,10 +119,11 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: #332419;
   transition: 0.3s ease-in-out;
 }
+
 /* Flex differences */
 
 .card-row1 {
