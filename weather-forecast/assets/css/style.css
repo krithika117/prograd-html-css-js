@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+body {
+    background-image: linear-gradient(174.2deg, rgba(255, 244, 228, 1) 7.1%, rgba(240, 246, 238, 1) 67.4%);
+    font-family: 'Product Sans' !important;
+}
+
+::-webkit-scrollbar {
+    width: 0em;
+}
+
+.card-img {
+    padding: 0;
+    margin: 0;
+    max-width: 6rem;
+}
+
+.description,
+.timezone {
+    text-transform: capitalize;
+}
+
+.card {
+    background: rgba(190, 146, 112, 0.25) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37)!important;
+    backdrop-filter: blur(4px)!important;
+    -webkit-backdrop-filter: blur(4px)!important;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn-secondary{
+    background: rgba(165, 79, 13, 0.441) !important;
+}
